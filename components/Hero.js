@@ -1,42 +1,91 @@
-import React from "react";
+import React, { useState } from "react";
 import PopUp from "./PopUp";
 
+
 const Hero = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setMenuOpen(!isMenuOpen);
+  };
   return (
     <div>
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-              Knausgaard typewriter readymade marfa
+              Your E-commerce!
             </h1>
-            <p className="mb-8 leading-relaxed">
-              Chillwave portland ugh, knausgaard fam polaroid iPhone. Man braid
-              swag typewriter affogato, hella selvage wolf narwhal dreamcatcher.
+            <span className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-400">
+              Venture Starts Here
+            </span>
+            <p className="mb-8 leading-relaxed ">
+              More than just a reliable ecommerce platform
             </p>
             <div className="flex w-full md:justify-start justify-center items-end">
-              <div className="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
+              <div className=" flex relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
                 <label
                   htmlFor="hero-field"
                   className="leading-7 text-sm text-gray-600"
-                >
-                  Placeholder
-                </label>
+                ></label>
                 <input
                   type="text"
                   id="hero-field"
                   name="hero-field"
-                  className="w-full bg-gray-100 rounded border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  placeholder="seacrh location here..."
+                  className="w-80 bg-gray-100 rounded border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-0 px-2 leading-8 transition-colors duration-200 ease-in-out"
                 />
+                
+                  <button
+                    className="relative items-center p-2 rounded-md bg-gray-300"
+                    onClick={handleMenuToggle}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 mr-3"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                    Locate Me
+                  </button>
+                  {isMenuOpen && (
+                    <div className="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white">
+                      <a
+                        href="#"
+                        className="relative block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                        onClick={handleMenuToggle}
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="w-5 h-5 mr-2"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M15 6l-2 2-2-2M9 18h6"
+                          />
+                        </svg>
+                        Pick from Map
+                      </a>
+                    </div>
+                  )}
+                
               </div>
-              {/* <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg ">
-                Button
-              </button> */}
-              <PopUp/>
+              <PopUp />
             </div>
-            <p className="text-sm mt-2 text-gray-500 mb-8 w-full">
-              Neutra shabby chic ramps, viral fixie.
-            </p>
+            <p className="text-sm mt-2 text-gray-500 mb-8 w-full"></p>
             <div className="flex lg:flex-row md:flex-col">
               <button className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
                 <svg

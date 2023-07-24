@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 
 const Popup = ({ onClose }) => {
@@ -20,25 +21,25 @@ const Popup = ({ onClose }) => {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 top-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
-      <div className="rounded-lg bg-white p-20">
+      <div className="rounded-lg bg-white p-14">
         <h1 className="bottom-1 top-4 mb-5 flex justify-center text-2xl space-x-4">
           Please Select Your Services
         </h1>
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-4 space-x-4">
           {images.map((image) => (
             <button
               key={image.id}
-              className="relative mb-4 ml-4 mr-4 mt-4 h-0 w-full overflow-hidden pb-[75%]"
+              className=" mb-4 ml-4 mr-4 mt-4 h-0 w-full overflow-hidden pb-[75%] space-x-4"
               onClick={() => openNewPage(image.url)}
             >
               <img
-                className="absolute h-full w-full object-cover font-bold  text-green-500"
+                className="absolute h-full w-full object-cover font-bold  text-green-500 space-x-4"
                 src={image.url}
                 alt="popup"
               />
               
             
-              <h6 className="mt-18">{image.name}</h6>
+              <h6 className="mb-20">{image.name}</h6>
               
               
             </button>
