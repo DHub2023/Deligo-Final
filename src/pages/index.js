@@ -9,15 +9,17 @@ import Sidebar from "../../components/Sidebar";
 import TestimonialSlider from "../../components/Testinomial";
 import Gift from "./gift";
 import Electronic from "./electronic";
-
-
-
+import Packege from "./packege";
+import MyOrderPage from "./User/my_order";
+import SideBar from "../../components/User/SideBar";
+import Profile from "./User/profile";
+import Address from "./User/address";
+import LoyaltyPointsLayout from "./User/loyalty";
+import ReferralLayout from "./User/referral";
 
 export default function Home() {
   return (
     <div>
-
-      
       <Hero/>
       
       <Home1/>
@@ -28,7 +30,14 @@ export default function Home() {
       <Home5/>
       <Home6/>
       <TestimonialSlider/>
-      <Electronic/>
+      {/* <Electronic/>
+      <Packege/> 
+      <Gift/> */}
+      {/* <MyOrderPage/> */}
+      {/* <SideBar/> */}
+      {/* <Profile/> */}
+      <ReferralLayout/>
+
     </div>
     
   )

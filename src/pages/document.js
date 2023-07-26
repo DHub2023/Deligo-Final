@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const document = () => {
   return (
@@ -159,13 +160,17 @@ const document = () => {
           <h2 className="text-xl text-center font-bold mb-2">
             Parcel Information
           </h2>
-          <img
-            src="/images/gift_place.jpg"
-            alt="Gift"
-            className="w-full h-64 object-cover mb-2"
+          <Image
+            src="/images/document.png"
+            alt="document"
+            className="object-cover m-5 mx-4 my-4 justify-center shadow-md"
+            width={150}
+            height={180}
           />
-          <h3 className="text-lg font-bold text-center">Gifts</h3>
-          <p className="mb-4 text-center">Flower, Cards, Chocolate</p>
+          <h3 className="text-lg font-bold text-center">Documents</h3>
+          <p className="mb-4 text-center">
+            No Passport or bank cheques allowed
+          </p>
           <button className="bg-red-500 text-white py-3 px-4 rounded w-full">
             Proceed to Checkout
           </button>

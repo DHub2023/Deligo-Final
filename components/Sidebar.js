@@ -13,13 +13,13 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="fixed right-0 top-1/2 transform -translate-y-1/2 flex flex-col items-center shadow-2xl  bg-transparent shadow-rose-950">
+    <div className="fixed right-0 top-1/2 transform -translate-y-1/2 flex flex-col items-center shadow-2xl  bg-transparent shadow-rose-950 ">
       {images.map((image, index) => (
         <a key={index} href="/parcel_home" className="mb-4">
           <img
             src={image}
             alt={`Image ${index + 1}`}
-            className="w-12 h-12 rounded-full border-2 border-gray-300 hover:border-rose-500 transition duration-300"
+            className="w-12 h-12 rounded-full border-2 shadow-md border-gray-300 hover:border-rose-500 transition duration-300"
           />
         </a>
 

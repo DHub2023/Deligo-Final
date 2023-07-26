@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const packege = () => {
   return (
@@ -155,17 +156,24 @@ const packege = () => {
         </div>
 
         {/* Parcel Information */}
-        <div>
+        <div className="text-center shadow-md">
           <h2 className="text-xl text-center font-bold mb-2">
             Parcel Information
           </h2>
-          <img
-            src="/images/gift_place.jpg"
-            alt="Gift"
-            className="w-full h-64 object-cover mb-2"
-          />
-          <h3 className="text-lg font-bold text-center">Gifts</h3>
-          <p className="mb-4 text-center">Flower, Cards, Chocolate</p>
+          <div className=" text-center shadow-lg ">
+            <Image
+              src="/images/packege.png"
+              alt="Packege"
+              className="object-center m-5 mx-4 my-4 text-center "
+              width={150}
+              height={180}
+            />
+            <h3 className="text-base font-extrabold text-text-center">Package</h3>
+            <p className="mb-4 text-center">
+              Non-perishable goods, no food items - Not more than 5kg
+            </p>
+          </div>
+
           <button className="bg-red-500 text-white py-3 px-4 rounded w-full">
             Proceed to Checkout
           </button>
