@@ -16,7 +16,8 @@ import Profile from "./User/profile";
 import Address from "./User/address";
 import LoyaltyPointsLayout from "./User/loyalty";
 import ReferralLayout from "./User/referral";
-
+import Contact from "./contact";
+import Error from "./error";
 export default function Home() {
   return (
     <div>
@@ -36,7 +37,9 @@ export default function Home() {
       {/* <MyOrderPage/> */}
       {/* <SideBar/> */}
       {/* <Profile/> */}
-      <ReferralLayout/>
+    {/* <ReferralLayout/>
+    <Address/> */}
+   
 
     </div>
     

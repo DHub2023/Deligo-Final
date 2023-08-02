@@ -9,6 +9,8 @@ import { SunIcon, MoonIcon } from "@heroicons/react/solid";
 import { useState, useEffect } from "react";
 import Layout from "./LanguageSwitcher";
 import { useRouter } from "next/router";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import { MdAccountCircle } from "react-icons/md";
 
 
 const Navbar = () => {
@@ -40,7 +42,7 @@ const Navbar = () => {
       );
     } else {
       return (
-        <MoonIcon
+        <BsFillMoonStarsFill
           className="w-8 h-8 ml-7 text-gray-900 "
           role="button"
           onClick={() => setTheme("dark")}
@@ -75,9 +77,12 @@ const Navbar = () => {
         {renderThemeChanger()}
 
         {/* Sign Up Button */}
+        <Link href={'/signin'}>
+        <MdAccountCircle className="text-xl md:text-3xl mx-2"/>
+        </Link>
         <button className="inline-flex   text-white bg-rose-500 border-0 px-4 py-2 rounded-md focus:outline-none hover:bg-rose-800  font-semibold">
           <AiFillLock className="m-1 " onClick={handleSignUp}/>
-          SignUp
+          SignIn
         </button>
         {/* <button className="text-rose hover:text-black hover:bg-rose px-4 py-2 rounded-md">
           Sign Up

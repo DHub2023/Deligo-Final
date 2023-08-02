@@ -17,7 +17,7 @@ const Home4 = () => {
                                 </p>
                             </div>
                             <div className="flex justify-center md:justify-start">
-                                <button className="bg-green-500 text-white px-4 py-2 rounded">Register</button>
+                                <button className="bg-rose-500 hover:bg-rose-600 text-white px-4 py-2 rounded">Register</button>
                             </div>
                         </div>
 
@@ -33,7 +33,7 @@ const Home4 = () => {
                                 </p>
                             </div>
                             <div className="flex justify-center md:justify-start">
-                                <button className="bg-green-500 text-white px-4 py-2 rounded">Register</button>
+                                <button className="bg-rose-500 text-white px-4 py-2 hover:bg-rose-600 rounded">Register</button>
                             </div>
                         </div>
 

@@ -4,7 +4,7 @@ const ReferralLayout = () => {
   return (
     <div className="bg-gray-100  flex items-center justify-center">
       <div className=" max-w-2xl bg-white  p-8 rounded-lg shadow-lg">
-        <h1 className="text-2xl font-bold  mx-96 mb-4 ">Earn money on every referral</h1>
+        <h1 className="text-2xl font-bold mb-4 ">Earn money on every referral</h1>
         <p className="text-center mb-6">1 referral = $5.00</p>
         <div className="flex justify-center mb-6">
           <img className="w-40 h-40" src="/images/mobile.avif" alt="Refer your code to your friends" />

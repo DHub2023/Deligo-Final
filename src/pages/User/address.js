@@ -1,16 +1,18 @@
-import React from 'react';
+import React from "react";
+import SearchIcon from "../../../components/User/SearchIcon";
 
-const SearchLayout = () => {
+const AddressPage = () => {
   return (
-    <div className="flex flex-col h-screen justify-center items-center shadow-2xl rounded-full">
-      <img
-        src="/images/search_icon.png"
-        alt="Search Icon"
-        className="w-96 h-96 mb-4"
-      />
-      <h1 className=" font-bold text-gray-600 text-base">No Address Found</h1>
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="m-20"></div>
+      <button className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Add New Address
+      </button>
+      <div className="flex flex-col items-center">
+        <SearchIcon />
+      </div>
     </div>
   );
 };
 
-export default SearchLayout;
+export default AddressPage;

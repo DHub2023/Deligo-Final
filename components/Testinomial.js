@@ -38,6 +38,7 @@ const TestimonialSlider = () => {
 
     return (
         <div className="container mx-auto">
+            
             <h1 className="text-4xl font-bold text-center mb-4">We satisfied some Customer & Restaurant Owners</h1>
             <div className="flex flex-col items-center">
                 <img
@@ -53,13 +54,13 @@ const TestimonialSlider = () => {
             </div>
             <div className="flex justify-center mt-4">
                 <button
-                    className="mr-2 p-2 bg-green-200 hover:bg-green-300 rounded-full focus:outline-none"
+                    className="mr-2 p-2 bg-rose-400 hover:bg-rose-500 rounded-full focus:outline-none"
                     onClick={handlePrev}
                 >
                     Prev
                 </button>
                 <button
-                    className="ml-2 p-2 bg-green-200 hover:bg-green-300 rounded-full focus:outline-none"
+                    className="ml-2 p-2 bg-rose-400 hover:bg-rose-500 rounded-full focus:outline-none"
                     onClick={handleNext}
                 >
                     Next
