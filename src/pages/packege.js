@@ -164,7 +164,7 @@ const packege = () => {
             <Image
               src="/images/packege.png"
               alt="Packege"
-              className="object-center m-5 mx-4 my-4 text-center "
+              className="ml-32 mx-4 my-4 text-center "
               width={150}
               height={180}
             />

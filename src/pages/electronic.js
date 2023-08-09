@@ -164,12 +164,14 @@ const electronic = () => {
             <Image
               src="/images/electronics.png"
               alt="Gift"
-              className="object-cover m-5 mx-4 my-4 justify-center shadow-md  "
+              className="ml-32 mx-4 my-4 justify-center shadow-md  "
               width={150}
               height={180}
             />
             <h3 className="text-lg font-bold text-center">Electronics</h3>
-            <p className="mb-4 text-center">Bubble wrapped, comments if fragile</p>
+            <p className="mb-4 text-center">
+              Bubble wrapped, comments if fragile
+            </p>
             <button className="bg-red-500 text-white py-3 px-4 rounded w-full">
               Proceed to Checkout
             </button>

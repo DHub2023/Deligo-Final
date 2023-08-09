@@ -18,30 +18,34 @@ import LoyaltyPointsLayout from "./User/loyalty";
 import ReferralLayout from "./User/referral";
 import Contact from "./contact";
 import Error from "./error";
-export default function Home() {
+import CheckOut from "../../components/CheckOut";
+
+
+const Home = () => {
   return (
     <div>
-      <Hero/>
       
-      <Home1/>
-      <Home2/>
-      <Home3/>
-      <Home4/>
-      <Sidebar/>
-      <Home5/>
-      <Home6/>
-      <TestimonialSlider/>
+      <Hero />
+
+      <Home1 />
+      <Home2 />
+      <Home3 />
+      <Home4 />
+      <Sidebar />
+      <Home5 />
+      <Home6 />
+      <TestimonialSlider />
       {/* <Electronic/>
       <Packege/> 
       <Gift/> */}
       {/* <MyOrderPage/> */}
       {/* <SideBar/> */}
       {/* <Profile/> */}
-    {/* <ReferralLayout/>
-    <Address/> */}
-   
-
+      {/* <ReferralLayout/>
+      <Address/> */}
+      <CheckOut />
     </div>
-    
+
   )
-}
+};
+export default Home;

@@ -72,7 +72,7 @@ import React from "react";
 import { Dropdown } from "@nextui-org/react";
 
 export default function App() {
-  const [selected, setSelected] = React.useState(new Set(["text"]));
+  const [selected, setSelected] = React.useState(new Set(["Language"]));
 
   const selectedValue = React.useMemo(
     () => Array.from(selected).join(", ").replaceAll("_", " "),

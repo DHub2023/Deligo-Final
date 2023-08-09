@@ -163,7 +163,7 @@ const document = () => {
           <Image
             src="/images/document.png"
             alt="document"
-            className="object-cover m-5 mx-4 my-4 justify-center shadow-md"
+            className="ml-36 mx-4 my-4 justify-center shadow-md"
             width={150}
             height={180}
           />

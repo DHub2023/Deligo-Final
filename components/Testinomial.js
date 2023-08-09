@@ -1,73 +1,147 @@
-import { useState } from 'react';
+import React from 'react'
 
-const testimonials = [
-    {
-        id: 1,
-        name: 'John Doe',
-        role: 'CEO',
-        image: '/images/john_testi.png',
-        message: 'This is a complete packege! I am running a multivendor(food,grocery)online ordering',
-    },
-    {
-        id: 2,
-        name: 'Jane Smith',
-        role: 'CTO',
-        image: '/images/testi2.png',
-        message: 'This is a complete packege! I am running a multivendor(food,grocery)online ordering',
-    },
-    {
-        id: 3,
-        name: 'Jane Smith',
-        role: 'CTO',
-        image: '/images/testi3.png',
-        message: 'This is a complete packege! I am running a multivendor(food,grocery)online ordering',
-    },
-    // Add more testimonials here
-];
-
-const TestimonialSlider = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
-
-    const handlePrev = () => {
-        setActiveIndex(prevIndex => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1));
-    };
-
-    const handleNext = () => {
-        setActiveIndex(prevIndex => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1));
-    };
-
+const Testinomial = () => {
     return (
-        <div className="container mx-auto">
-            
-            <h1 className="text-4xl font-bold text-center mb-4">We satisfied some Customer & Restaurant Owners</h1>
-            <div className="flex flex-col items-center">
-                <img
-                    className="w-32 h-32 rounded-full mb-4 object-cover"
-                    src={testimonials[activeIndex].image}
-                    alt={testimonials[activeIndex].name}
-                />
-                <h2 className="text-xl font-bold mb-2">{testimonials[activeIndex].name}</h2>
-                <p className="text-gray-600">{testimonials[activeIndex].role}</p>
-                <p className="text-gray-700 text-center max-w-md mt-4">
-                    {testimonials[activeIndex].message}
-                </p>
-            </div>
-            <div className="flex justify-center mt-4">
-                <button
-                    className="mr-2 p-2 bg-rose-400 hover:bg-rose-500 rounded-full focus:outline-none"
-                    onClick={handlePrev}
-                >
-                    Prev
-                </button>
-                <button
-                    className="ml-2 p-2 bg-rose-400 hover:bg-rose-500 rounded-full focus:outline-none"
-                    onClick={handleNext}
-                >
-                    Next
-                </button>
+        <div>
+            {/* Container for demo purpose */}
+            <div className="container my-12 mx-auto md:px-6 bg-gray-100">
+                <section className="mb-32 text-center">
+                    <h2 className="mb-12 text-3xl font-bold">We satisfied some Customer & Restaurant Owners</h2>
+                    <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
+                        <div className="mb-12 md:mb-0">
+                            <div className="mb-6 flex justify-center">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg" className="w-32 rounded-full shadow-lg dark:shadow-black/20" />
+                            </div>
+                            <h5 className="mb-2 text-lg font-bold">Maria Smantha</h5>
+                            <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+                                Nursing Assistant
+                            </h6>
+                            <p className="mb-4 ">
+                                The Best in Business.With Deligo App ,I have just Reinvented the way of online ordering and delivery System
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="inline-block w-6">
+                                    <path fill="currentColor" d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
+                                </svg>
+                            </p>
+                            <ul className="mb-0 flex justify-center">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="w-5 text-warning">
+                                        <path fill="currentColor" d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="w-5 text-warning">
+                                        <path fill="currentColor" d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="w-5 text-warning">
+                                        <path fill="currentColor" d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="w-5 text-warning">
+                                        <path fill="currentColor" d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="w-5 text-warning">
+                                        <path fill="currentColor" d="m480 757 157 95-42-178 138-120-182-16-71-168v387ZM233 976l65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="mb-12 md:mb-0">
+                            <div className="mb-6 flex justify-center">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg" className="w-32 rounded-full shadow-lg dark:shadow-black/20" />
+                            </div>
+                            <h5 className="mb-2 text-lg font-bold">Lisa Cudrow</h5>
+                            <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+                                Graphic Designer
+                            </h6>
+                            <p className="mb-4">
+                                Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                                corporis suscipit laboriosam, nisi ut aliquid commodi.
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="inline-block w-6">
+                                    <path fill="currentColor" d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
+                                </svg>
+                            </p>
+                            <ul className="mb-0 flex justify-center">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="w-5 text-warning">
+                                        <path fill="currentColor" d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="w-5 text-warning">
+                                        <path fill="currentColor" d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="w-5 text-warning">
+                                        <path fill="currentColor" d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="w-5 text-warning">
+                                        <path fill="currentColor" d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="w-5 text-warning">
+                                        <path fill="currentColor" d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="mb-0">
+                            <div className="mb-6 flex justify-center">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg" className="w-32 rounded-full shadow-lg dark:shadow-black/20" />
+                            </div>
+                            <h5 className="mb-2 text-lg font-bold">John Smith</h5>
+                            <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+                                Marketing Specialist
+                            </h6>
+                            <p className="mb-4">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium voluptatum deleniti atque corrupti.
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="inline-block w-6">
+                                    <path fill="currentColor" d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
+                                </svg>
+                            </p>
+                            <ul className="mb-0 flex justify-center">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="w-5 text-warning">
+                                        <path fill="currentColor" d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="w-5 text-warning">
+                                        <path fill="currentColor" d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="w-5 text-warning">
+                                        <path fill="currentColor" d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="w-5 text-warning">
+                                        <path fill="currentColor" d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" className="w-5 text-warning">
+                                        <path fill="currentColor" d="m323 851 157-94 157 95-42-178 138-120-182-16-71-168-71 167-182 16 138 120-42 178Zm-90 125 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-355Z" />
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default TestimonialSlider;
+export default Testinomial
+

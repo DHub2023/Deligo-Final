@@ -4,7 +4,7 @@ const NewsLetter = () => {
   return (
     <div>
       {/* Container for demo purpose */}
-      <div className="container my-24 mx-auto md:px-6">
+      <div className="container my-24 mx-auto md:px-6 bg-gray-200">
         {/* Section: Design Block */}
         <section className="mb-32 text-center lg:text-left">
           <div className="flex flex-wrap justify-center">

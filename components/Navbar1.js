@@ -11,6 +11,7 @@ import Layout from "./LanguageSwitcher";
 import { useRouter } from "next/router";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { MdAccountCircle } from "react-icons/md";
+import DropdownMenu from "./DropdownMenu";
 
 
 const Navbar = () => {
@@ -80,10 +81,11 @@ const Navbar = () => {
         <Link href={'/signin'}>
         <MdAccountCircle className="text-xl md:text-3xl mx-2"/>
         </Link>
-        <button className="inline-flex   text-white bg-rose-500 border-0 px-4 py-2 rounded-md focus:outline-none hover:bg-rose-800  font-semibold">
+        {/* <button className="inline-flex   text-white bg-rose-500 border-0 px-4 py-2 rounded-md focus:outline-none hover:bg-rose-800  font-semibold">
           <AiFillLock className="m-1 " onClick={handleSignUp}/>
           SignIn
-        </button>
+        </button> */}
+        <DropdownMenu/>
         {/* <button className="text-rose hover:text-black hover:bg-rose px-4 py-2 rounded-md">
           Sign Up
         </button> */}
