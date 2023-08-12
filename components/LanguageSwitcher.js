@@ -94,7 +94,6 @@ export default function App() {
       >
         <Dropdown.Item key="English">English</Dropdown.Item>
         <Dropdown.Item key="Hindi">Hindi</Dropdown.Item>
-        <Dropdown.Item key="Tamil">Tamil</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );

@@ -1,32 +1,11 @@
-import { useState } from "react";
+import React from "react";
+import ImageLink from "./ImageLink";
 
-const Popup = ({ onClose }) => {
-  const images = [
-    { id: 1, name: "grocery", url: "/images/grocery1.png" },
-    { id: 2, name: "shop", url: "/images/shop1.png" },
-    { id: 3, name: "food", url: "/images/food.png" },
-    { id: 4, name: "service", url: "/images/service.png" },
-    { id: 5, name: "parcel", url: "/images/parcel.png" },
-    { id: 6, name: "cabs", url: "/images/cabs.png" },
-    { id: 7, name: "medicine", url: "/images/medicine.png" },
-    { id: 8, name: "ride", url: "/images/ride1.png" },
-    // Add more images here
-  ];
-
-  const openNewPage = (url) => {
-    // Logic to open a new webpage with the provided URL
-    window.open(url, "_blank");
-  };
-
+const Service = () => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 top-0 flex items-center justify-center overflow-hidden">
-      <div className="absolute bg-gray-900 bg-opacity-50 inset-0"></div>
-      <div className="relative rounded-lg bg-white p-8">
-        <h1 className="mb-5 text-2xl text-center font-semibold">
-          Select Your Services
-        </h1>
-        <hr />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-3">
+    <section className="text-gray-600 body-font">
+      <div className="container px-5 py-5 mx-auto">
+        <div className="flex flex-wrap -m-4">
           <div className="lg:w-1/8 md:w-1/8 p-4 w-32 h-28 mr-3 mb-2  hover:border-rose-400 border bg-white transform transition-all duration-300 ease-in-out hover:shadow-lg hover:bg-gray-100 hover:scale-105">
             <a className="block relative h-[97px] w-[97px] ml-5 rounded  overflow-hidden text-center">
               <img
@@ -140,41 +119,9 @@ const Popup = ({ onClose }) => {
             </div>
           </div>
         </div>
-        <button
-          className="mt-4 rounded-3xl bg-rose-500 px-4 py-2 font-bold text-white hover:bg-rose-800 w-full sm:w-auto"
-          onClick={onClose}
-        >
-          Close
-        </button>
       </div>
-    </div>
+    </section>
   );
 };
 
-const Home = () => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-
-  const handleExploreClick = () => {
-    setIsPopupOpen(true);
-    document.body.classList.add('no-scroll');
-  };
-
-  const handleClosePopup = () => {
-    setIsPopupOpen(false);
-    document.body.classList.remove('no-scroll');
-  };
-
-  return (
-    <div>
-      <button
-        className="mt-1 rounded-3xl bg-rose-600 px-4 py-2 font-bold text-white hover:bg-rose-800"
-        onClick={handleExploreClick}
-      >
-        Explore
-      </button>
-      {isPopupOpen && <Popup onClose={handleClosePopup} />}
-    </div>
-  );
-};
-
-export default Home;
+export default Service;

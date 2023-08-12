@@ -19,19 +19,20 @@ import ReferralLayout from "./User/referral";
 import Contact from "./contact";
 import Error from "./error";
 import CheckOut from "../../components/CheckOut";
-
+import Service from "../../components/Service";
+import Popup from "../../components/PopUp";
+import PopUp1 from "../../components/PopUp1";
 
 const Home = () => {
   return (
     <div>
-      
       <Hero />
+      <Service />
 
       <Home1 />
       <Home2 />
       <Home3 />
       <Home4 />
-      <Sidebar />
       <Home5 />
       <Home6 />
       <TestimonialSlider />
@@ -43,9 +44,8 @@ const Home = () => {
       {/* <Profile/> */}
       {/* <ReferralLayout/>
       <Address/> */}
-      <CheckOut />
+      {/* <CheckOut /> */}
     </div>
-
-  )
+  );
 };
 export default Home;

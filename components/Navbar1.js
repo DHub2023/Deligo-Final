@@ -13,7 +13,6 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { MdAccountCircle } from "react-icons/md";
 import DropdownMenu from "./DropdownMenu";
 
-
 const Navbar = () => {
   // Router
   const router = useRouter();
@@ -36,7 +35,7 @@ const Navbar = () => {
     if (currentTheme === "dark") {
       return (
         <SunIcon
-          className="w-8 h-8 ml-7 text-yellow-500 "
+          className="w-8 h-8 ml-7 mt-2 text-yellow-500 "
           role="button"
           onClick={() => setTheme("light")}
         />
@@ -44,7 +43,7 @@ const Navbar = () => {
     } else {
       return (
         <BsFillMoonStarsFill
-          className="w-8 h-8 ml-7 text-gray-900 "
+          className="w-8 h-8 ml-7 mt-2 text-gray-900 "
           role="button"
           onClick={() => setTheme("dark")}
         />
@@ -53,16 +52,18 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-lg px-4 py-2 flex items-center justify-between">
-      {/* Logo */}
-      <Link href={"/"}>
-        <Image
-          src={"/assets/images/dhub-logo.png"}
-          alt=""
-          width={150}
-          height={80}
-        ></Image>
-      </Link>
+    <div className="bg-white shadow-lg px-4 py-2 flex flex-col md:flex-row md:justify-between  items-center justify-center">
+      <div className="logo">
+        {/* Logo */}
+        <Link href={"/"}>
+          <Image
+            src={"/assets/images/dhub-logo.png"}
+            alt="logo"
+            width={150}
+            height={80}
+          ></Image>
+        </Link>
+      </div>
 
       {/* Search Bar */}
       <div className="flex items-center bg-rose rounded-md px-3 py-2 mx-4">
@@ -70,7 +71,7 @@ const Navbar = () => {
       </div>
 
       {/* Section with 3 items */}
-      <div className="flex items-center space-x-4">
+      <div className="nav flex flex-col md:flex-row md:justify-between  items-center space-x-4">
         {/* Language Switcher Dropdown */}
         <Layout />
 
@@ -78,19 +79,20 @@ const Navbar = () => {
         {renderThemeChanger()}
 
         {/* Sign Up Button */}
-        <Link href={'/signin'}>
-        <MdAccountCircle className="text-xl md:text-3xl mx-2"/>
+        <Link href={"/signin"}>
+          <MdAccountCircle className="text-xl md:text-4xl mt-3 mx-2" />
         </Link>
         {/* <button className="inline-flex   text-white bg-rose-500 border-0 px-4 py-2 rounded-md focus:outline-none hover:bg-rose-800  font-semibold">
           <AiFillLock className="m-1 " onClick={handleSignUp}/>
           SignIn
         </button> */}
-        <DropdownMenu/>
+        <DropdownMenu />
         {/* <button className="text-rose hover:text-black hover:bg-rose px-4 py-2 rounded-md">
           Sign Up
         </button> */}
       </div>
-    </nav>
+    </div>
+    
   );
 };
 

@@ -4,7 +4,7 @@ const Testinomial = () => {
     return (
         <div>
             {/* Container for demo purpose */}
-            <div className="container my-12 mx-auto md:px-6 bg-gray-100">
+            <div className="container my-2 mx-auto md:px-6 bg-gray-100">
                 <section className="mb-32 text-center">
                     <h2 className="mb-12 text-3xl font-bold">We satisfied some Customer & Restaurant Owners</h2>
                     <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">

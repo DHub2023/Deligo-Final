@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { FaGooglePlay } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -9,13 +10,13 @@ const Footer = () => {
       </h1> */}
       {/* Footer container */}
       {/* Container for demo purpose */}
-      <div className="container my-24 mx-auto md:px-6">
+      <div className="container my-5 mx-auto md:px-6">
         {/* Section: Design Block */}
-        <section className="mb-32 text-center lg:text-left">
+        <section className="mb-8 mt-2 text-center lg:text-left">
           <div className="flex flex-wrap justify-center">
             <div className="w-full shrink-0 grow-0 basis-auto px-3 md:w-10/12 lg:w-11/12 xl:w-10/12">
               <div className="grid items-center gap-x-6 lg:grid-cols-2">
-                <div className="mb-10 lg:mb-0">
+                <div className="mb-6 lg:mb-0">
                   <h2 className="text-3xl font-bold dark:text-rose-600 text-rose-400">
                     Do not miss any updates.
                     <br />
@@ -67,7 +68,7 @@ const Footer = () => {
           <div className="flex justify-center">
             <a
               href="#!"
-              className="mr-6 text-white dark:text-white"
+              className="mr-6 text-white dark:text-white hover:bg-red-950 rounded-2xl px-2 py-3 bg-rose-800 border-rose-950 hover:border-white border"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +81,7 @@ const Footer = () => {
             </a>
             <a
               href="#!"
-              className="mr-6 text-white dark:text-white"
+              className="mr-6 text-white dark:text-white hover:bg-red-950 rounded-2xl px-2 py-3 bg-rose-800 border-rose-950 hover:border-white border"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +94,7 @@ const Footer = () => {
             </a>
             <a
               href="#!"
-              className="mr-6 text-white dark:text-white"
+              className="mr-6 text-white dark:text-white hover:bg-red-950 rounded-2xl px-2 py-3 bg-rose-800 border-rose-950 hover:border-white border"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +111,7 @@ const Footer = () => {
             </a>
             <a
               href="#!"
-              className="mr-6 text-white dark:text-white"
+              className="mr-6 text-white dark:text-white hover:bg-red-950 rounded-2xl px-2 py-3 bg-rose-800 border-rose-950 hover:border-white border"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +124,7 @@ const Footer = () => {
             </a>
             <a
               href="#!"
-              className="mr-6 text-white dark:text-white"
+              className="mr-6 text-white dark:text-white hover:bg-red-950 rounded-2xl px-2 py-3 bg-rose-800 border-rose-950 hover:border-white border"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +135,10 @@ const Footer = () => {
                 <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
               </svg>
             </a>
-            <a href="#!" className="text-white dark:text-white">
+            <a
+              href="#!"
+              className="mr-6 text-white dark:text-white hover:bg-red-950 rounded-2xl px-2 py-3 bg-rose-800 border-rose-950 hover:border-white border"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-4 w-4"
@@ -152,16 +156,19 @@ const Footer = () => {
             {/* Tailwind Elements section */}
             <div className>
               <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
-                <img
-                  src="/images/dhub-logo.png"
-                  alt="Company Logo"
-                  className="mb-4 h-20 w-25"
-                />
+                <Link href={"/"} className="cursor-pointer">
+                  <img
+                    src="/images/dhub-logo.png"
+                    alt="Company Logo"
+                    className="mb-4 h-20 w-25"
+                  />
+                </Link>
               </h6>
-              <p>
+              <p className="-mt-5">
                 Connect with our social media and other sites to keep up to date
               </p>
-              <div className="flex lg:flex-row md:flex-col">
+
+              {/* <div className="flex lg:flex-row md:flex-col">
                 <button className="bg-rose-800 inline-flex py-3 px-5 rounded-lg items-center hover:bg-rose-950 focus:outline-none w-96 h-12">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -194,7 +201,7 @@ const Footer = () => {
                     
                   </span>
                 </button>
-              </div>
+              </div>*/}
             </div>
             {/* Products section */}
             <div className>
@@ -233,7 +240,7 @@ const Footer = () => {
             </div>
             {/* Useful links section */}
             <div className>
-              <li className="mb-4" >
+              <li className="mb-4">
                 <Link
                   href="/privacy"
                   className="text-white hover:font-bold dark:text-white"
@@ -337,14 +344,8 @@ const Footer = () => {
           </div>
         </div>
         {/*Copyright section*/}
-        <div className="bg-neutral-200 p-6 text-center dark:bg-neutral-700">
-          <span>© 2023 Copyright:</span>
-          <a
-            className="font-semibold text-white dark:text-neutral-400"
-            href="https://tailwind-elements.com/"
-          >
-            Deligo App
-          </a>
+        <div className="bg-rose-600  p-6 flex text-left dark:bg-neutral-700">
+          <span>© 2023 DHub Services All Rights Reserved. </span>
         </div>
       </footer>
     </div>

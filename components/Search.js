@@ -3,8 +3,8 @@ import React from "react";
 const Search = () => {
   return (
     <div
-      className="flex gap-3 bg-rose-100
-     p-3 rounded-xl items-center"
+      className="flex  gap-3  bg-rose-200
+     p-3 rounded-full text-white items-center"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ const Search = () => {
         type="text"
         placeholder="Search"
         // onKeyDown={(e)=>e.key=='Enter'&&searchPlace(e.target.value)}
-        className="bg-transparent outline-none w-80 text-[17px]
+        className="bg-transparent outline-none md:w-80 sm:w-56 text-[17px]
         placeholder-rose-400"
       />
     </div>

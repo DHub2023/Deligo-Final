@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import PopUp from "./PopUp";
 import Search from "./Search";
 import SearchLocation from "./SearchLocation";
-
+import Image from "next/image";
+import ImageButton from "./ImageLink";
 
 const Hero = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -10,11 +11,12 @@ const Hero = () => {
   const handleMenuToggle = () => {
     setMenuOpen(!isMenuOpen);
   };
+ 
   return (
     <div>
-      <section className="text-gray-600 body-font ">
-        <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <section className="text-gray-600 body-font py-3 ">
+        <div className="container bg-rose-100 rounded-2xl mx-auto flex px-5 py-6 md:flex-row flex-col items-center">
+          <div className="lg:flex-grow  md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center rounded-full">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
               Your E-commerce!
             </h1>
@@ -24,11 +26,10 @@ const Hero = () => {
             <p className="mb-8 leading-relaxed ">
               More than just a reliable ecommerce platform
             </p>
-            <div className="flex w-full md:justify-start justify-center items-end">
-              <SearchLocation/>
-              
+            <div className="flex  md:justify-start  justify-center items-end">
+              <SearchLocation />
             </div>
-            
+
             <p className="text-sm mt-2 text-gray-500 mb-8 w-full"></p>
             <div className="flex lg:flex-row md:flex-col">
               <button className="bg-rose-800 inline-flex py-3 px-5 rounded-lg items-center hover:bg-rose-950 focus:outline-none">
@@ -42,7 +43,9 @@ const Hero = () => {
                 </svg>
                 <span className="ml-4 flex items-start flex-col leading-none">
                   <span className="text-xs text-white mb-1">GET IT ON</span>
-                  <span className="title-font text-white font-medium">Google Play</span>
+                  <span className="title-font text-white font-medium">
+                    Google Play
+                  </span>
                 </span>
               </button>
               <button className="bg-rose-800 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-rose-950 focus:outline-none">
@@ -59,18 +62,23 @@ const Hero = () => {
                   <span className="text-xs text-white mb-1">
                     Download on the
                   </span>
-                  <span className="title-font text-white font-medium">App Store</span>
+                  <span className="title-font text-white font-medium">
+                    App Store
+                  </span>
                 </span>
               </button>
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img
-              className="object-cover object-center rounded"
+          <div className="  lg:max-w-lg  md:w-1/2 w-5/6">
+            <Image
+              className=" sm:ml-24 md:ml-2 object-center rounded"
               alt="hero"
-              src="/images/2.jpg"
-            />
+              src="/images/hero1.png"
+              height={450}
+              width={460}
+            ></Image>
           </div>
+          
         </div>
       </section>
     </div>
