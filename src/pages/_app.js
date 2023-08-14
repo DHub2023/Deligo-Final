@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar1";
 import Banner from "../../components/Banner";
 import { ThemeProvider } from "next-themes";
 import { SessionProvider } from "next-auth/react";
+import "../styles/globals.css";
 
 export default function App({ Component, pageProps }) {
   return (

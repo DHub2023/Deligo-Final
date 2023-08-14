@@ -17,7 +17,7 @@ const Footer = () => {
             <div className="w-full shrink-0 grow-0 basis-auto px-3 md:w-10/12 lg:w-11/12 xl:w-10/12">
               <div className="grid items-center gap-x-6 lg:grid-cols-2">
                 <div className="mb-6 lg:mb-0">
-                  <h2 className="text-3xl font-bold dark:text-rose-600 text-rose-400">
+                  <h2 className="text-3xl font-bold dark:text-blue-500 text-blue-950">
                     Do not miss any updates.
                     <br />
                     <span className="text-primary dark:text-primary-400">
@@ -32,7 +32,7 @@ const Footer = () => {
                   >
                     <input
                       type="text"
-                      className="peer block min-h-[auto] w-full rounded border-rose-500 bg-rose-100 py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-rose-200 dark:placeholder:text-rose-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                      className="peer block min-h-[auto] w-full rounded border-blue-900 bg-blue-100 py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-rose-200 dark:placeholder:text-rose-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                       id="exampleFormControlInput2"
                       placeholder="Enter your email"
                     />
@@ -45,7 +45,7 @@ const Footer = () => {
                   </div>
                   <button
                     type="submit"
-                    className="inline-block rounded bg-primary px-7 pt-3 pb-2.5 text-sm font-medium uppercase leading-normal bg-rose-400 text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-rose-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                    className="inline-block rounded bg-primary px-7 pt-3 pb-2.5 text-sm font-medium uppercase leading-normal bg-blue-900 text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-blue-950 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                     data-te-ripple-init
                     data-te-ripple-color="light"
                   >
@@ -59,7 +59,7 @@ const Footer = () => {
         {/* Section: Design Block */}
       </div>
       {/* Container for demo purpose */}
-      <footer className="bg-rose-600 text-center text-white dark:bg-rose-600  dark:text-white lg:text-left">
+      <footer className="bg-blue-900 text-center text-white dark:bg-blue-900  dark:text-white lg:text-left">
         <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
           <div className="mr-12 hidden lg:block">
             <span>Get connected with us on social networks:</span>
@@ -68,7 +68,7 @@ const Footer = () => {
           <div className="flex justify-center">
             <a
               href="#!"
-              className="mr-6 text-white dark:text-white hover:bg-red-950 rounded-2xl px-2 py-3 bg-rose-800 border-rose-950 hover:border-white border"
+              className="mr-6 text-white dark:text-white hover:bg-blue-950 rounded-md px-3 py-2 bg-blue-900 border-blue-950 hover:border-white border"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ const Footer = () => {
             </a>
             <a
               href="#!"
-              className="mr-6 text-white dark:text-white hover:bg-red-950 rounded-2xl px-2 py-3 bg-rose-800 border-rose-950 hover:border-white border"
+              className="mr-6 text-white dark:text-white hover:bg-blue-950 rounded-md px-3 py-2 bg-blue-900 border-blue-950 hover:border-white border"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ const Footer = () => {
             </a>
             <a
               href="#!"
-              className="mr-6 text-white dark:text-white hover:bg-red-950 rounded-2xl px-2 py-3 bg-rose-800 border-rose-950 hover:border-white border"
+              className="mr-6 text-white dark:text-white hover:bg-blue-950 rounded-md px-3 py-2 bg-blue-900 border-blue-950 hover:border-white border"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +111,7 @@ const Footer = () => {
             </a>
             <a
               href="#!"
-              className="mr-6 text-white dark:text-white hover:bg-red-950 rounded-2xl px-2 py-3 bg-rose-800 border-rose-950 hover:border-white border"
+              className="mr-6 text-white dark:text-white hover:bg-blue-950 rounded-md px-3 py-2 bg-blue-900 border-blue-950 hover:border-white border"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +124,7 @@ const Footer = () => {
             </a>
             <a
               href="#!"
-              className="mr-6 text-white dark:text-white hover:bg-red-950 rounded-2xl px-2 py-3 bg-rose-800 border-rose-950 hover:border-white border"
+              className="mr-6 text-white dark:text-white hover:bg-blue-950 rounded-md px-3 py-2 bg-blue-900 border-blue-950 hover:border-white border"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +137,7 @@ const Footer = () => {
             </a>
             <a
               href="#!"
-              className="mr-6 text-white dark:text-white hover:bg-red-950 rounded-2xl px-2 py-3 bg-rose-800 border-rose-950 hover:border-white border"
+              className="mr-6 text-white dark:text-white hover:bg-blue-950 rounded-md px-3 py-2 bg-blue-900 border-blue-950 hover:border-white border"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +158,7 @@ const Footer = () => {
               <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
                 <Link href={"/"} className="cursor-pointer">
                   <img
-                    src="/images/dhub-logo.png"
+                    src="assets/images/dhub_logo.png"
                     alt="Company Logo"
                     className="mb-4 h-20 w-25"
                   />
@@ -344,7 +344,7 @@ const Footer = () => {
           </div>
         </div>
         {/*Copyright section*/}
-        <div className="bg-rose-600  p-6 flex text-left dark:bg-neutral-700">
+        <div className="bg-blue-950 p-6 flex text-left dark:bg-neutral-700">
           <span>© 2023 DHub Services All Rights Reserved. </span>
         </div>
       </footer>

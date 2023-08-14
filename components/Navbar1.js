@@ -52,15 +52,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-white shadow-lg px-4 py-2 flex flex-col md:flex-row md:justify-between  items-center justify-center">
+    <div className="md:bg-white sm:bg-blue-100  shadow-lg px-4 py-2 flex flex-col md:flex-row md:justify-between font-poppins  items-center justify-center">
       <div className="logo">
         {/* Logo */}
         <Link href={"/"}>
           <Image
-            src={"/assets/images/dhub-logo.png"}
+            src={"/assets/images/dhub_logo.png"}
             alt="logo"
-            width={150}
-            height={80}
+            width={200}
+            height={110}
           ></Image>
         </Link>
       </div>
@@ -80,13 +80,13 @@ const Navbar = () => {
 
         {/* Sign Up Button */}
         <Link href={"/signin"}>
-          <MdAccountCircle className="text-xl md:text-4xl mt-3 mx-2" />
+          <MdAccountCircle className="text-3xl md:text-4xl mt-4 mx-2" />
         </Link>
         {/* <button className="inline-flex   text-white bg-rose-500 border-0 px-4 py-2 rounded-md focus:outline-none hover:bg-rose-800  font-semibold">
           <AiFillLock className="m-1 " onClick={handleSignUp}/>
           SignIn
         </button> */}
-        <DropdownMenu />
+        {/* <DropdownMenu /> */}
         {/* <button className="text-rose hover:text-black hover:bg-rose px-4 py-2 rounded-md">
           Sign Up
         </button> */}

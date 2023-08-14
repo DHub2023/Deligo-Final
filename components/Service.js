@@ -4,10 +4,10 @@ import ImageLink from "./ImageLink";
 const Service = () => {
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-5 mx-auto">
-        <div className="flex flex-wrap -m-4">
-          <div className="lg:w-1/8 md:w-1/8 p-4 w-32 h-28 mr-3 mb-2  hover:border-rose-400 border bg-white transform transition-all duration-300 ease-in-out hover:shadow-lg hover:bg-gray-100 hover:scale-105">
-            <a className="block relative h-[97px] w-[97px] ml-5 rounded  overflow-hidden text-center">
+      <div className="container px-24 py-5 mx-auto">
+        <div className="flex flex-wrap m-4">
+          <div className="lg:w-1/8 md:w-1/8 p-2 w-32 h-28 mr-3 mb-2  hover:border-rose-400 border bg-white transform transition-all duration-300 ease-in-out hover:shadow-lg hover:bg-gray-100 hover:scale-105">
+            <a className="block relative h-[97px] w-[97px] ml-4 rounded  overflow-hidden text-center">
               <img
                 alt="ecommerce"
                 className=" object-center w-16 h-16 p-2 block hover:bg-white cursor-pointer animate-spin-slow "
@@ -15,7 +15,7 @@ const Service = () => {
               />
             </a>
             <div className="-mt-9">
-              <h2 className="text-gray-900 title-font ml-1 text-sm font-sm">
+              <h2 className="text-gray-900 title-font ml-3 text-xs font-sm">
                 Home Service
               </h2>
             </div>
@@ -29,7 +29,7 @@ const Service = () => {
               />
             </a>
             <div className="-mt-9">
-              <h2 className="text-gray-900 title-font ml-5 text-sm font-sm">
+              <h2 className="text-gray-900 title-font ml-9 text-xs font-sm">
                 Fashion
               </h2>
             </div>
@@ -43,7 +43,7 @@ const Service = () => {
               />
             </a>
             <div className="-mt-9">
-              <h2 className="text-gray-900 title-font ml-6 text-sm font-sm">
+              <h2 className="text-gray-900 title-font ml-8 text-xs font-sm">
                 Flowers
               </h2>
             </div>
@@ -57,7 +57,7 @@ const Service = () => {
               />
             </a>
             <div className="-mt-9">
-              <h2 className="text-gray-900 title-font ml-5 text-sm font-sm">
+              <h2 className="text-gray-900 title-font ml-6 text-xs font-sm">
                 Restraurant
               </h2>
             </div>
@@ -71,7 +71,7 @@ const Service = () => {
               />
             </a>
             <div className="-mt-9">
-              <h2 className="text-gray-900 title-font ml-2 text-sm font-sm">
+              <h2 className="text-gray-900 title-font ml-5 text-xs font-sm">
                 Cab Services
               </h2>
             </div>
@@ -85,7 +85,7 @@ const Service = () => {
               />
             </a>
             <div className="-mt-9">
-              <h2 className="text-gray-900 title-font ml-2 text-sm font-sm">
+              <h2 className="text-gray-900 title-font ml-5 text-xs font-sm">
                 Food Grocery
               </h2>
             </div>
@@ -99,7 +99,7 @@ const Service = () => {
               />
             </a>
             <div className="-mt-9">
-              <h2 className="text-gray-900 title-font ml-0 text-sm font-sm">
+              <h2 className="text-gray-900 title-font ml-6 text-xs font-sm">
                 Parcel Service
               </h2>
             </div>
@@ -113,7 +113,7 @@ const Service = () => {
               />
             </a>
             <div className="-mt-9">
-              <h2 className="text-gray-900 title-font ml-0 text-sm font-sm">
+              <h2 className="text-gray-900 title-font ml-5 text-xs font-sm">
                 Rental Service
               </h2>
             </div>

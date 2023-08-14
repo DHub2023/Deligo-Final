@@ -3,10 +3,29 @@
 @import 'tailwindcss/utilities';
 /* Import the Poppins font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Import Poppins Font */
+@font-face {
+  font-family: 'Poppins';
+  src: url('/public/assets/Fonts/poppins-black-webfont.woff2') format('woff2'),
+       url('/public/assets/Fonts/poppins-black-webfont.woff') format('woff');
+  /* Add more font formats if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply Poppins Font to the font-poppins class */
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
 
 /* Apply Poppins font to the whole application */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
+}
+
+footer{
+  font-family: 'Poppins';
 }
 .no-scroll {
   overflow: hidden;
@@ -27,17 +46,3 @@ body {
     @apply inline-block px-5 py-3 rounded-lg hover:bg-indigo-600 transition duration-300 shadow-lg bg-indigo-500 text-white capitalize tracking-wider font-semibold text-sm sm:text-xl focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50 whitespace-nowrap
   }
 }
-@keyframes spin-slow {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin-slow {
-  animation: spin-slow 8s linear infinite;
-}
-
-

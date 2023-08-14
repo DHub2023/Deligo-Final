@@ -6,12 +6,12 @@ const Home6 = () => {
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-blue-100">
               Let’s Manage Your Business Smartly
             </h1>
 
             <div className="flex lg:flex-row md:flex-col">
-            <button className="bg-rose-800 inline-flex py-3 px-5 rounded-lg items-center hover:bg-rose-950 focus:outline-none">
+            <button className="bg-blue-900 inline-flex py-3 px-5 rounded-lg items-center hover:bg-blue-950 focus:outline-none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -25,7 +25,7 @@ const Home6 = () => {
                   <span className="title-font text-white font-medium">Google Play</span>
                 </span>
               </button>
-              <button className="bg-rose-800 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-rose-950 focus:outline-none">
+              <button className="bg-blue-900 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-blue-950 focus:outline-none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"

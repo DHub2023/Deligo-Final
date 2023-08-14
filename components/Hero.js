@@ -15,9 +15,9 @@ const Hero = () => {
   return (
     <div>
       <section className="text-gray-600 body-font py-3 ">
-        <div className="container bg-rose-100 rounded-2xl mx-auto flex px-5 py-6 md:flex-row flex-col items-center">
+        <div className="container bg-blue-50 rounded-2xl mx-auto flex px-5 py-6 md:flex-row flex-col items-center">
           <div className="lg:flex-grow  md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center rounded-full">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-900">
               Your E-commerce!
             </h1>
             <span className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-400">
@@ -32,7 +32,7 @@ const Hero = () => {
 
             <p className="text-sm mt-2 text-gray-500 mb-8 w-full"></p>
             <div className="flex lg:flex-row md:flex-col">
-              <button className="bg-rose-800 inline-flex py-3 px-5 rounded-lg items-center hover:bg-rose-950 focus:outline-none">
+              <button className="bg-blue-900 inline-flex py-3 px-5 rounded-lg items-center hover:bg-blue-950 focus:outline-none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -48,7 +48,7 @@ const Hero = () => {
                   </span>
                 </span>
               </button>
-              <button className="bg-rose-800 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-rose-950 focus:outline-none">
+              <button className="bg-blue-900 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-blue-950 focus:outline-none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"

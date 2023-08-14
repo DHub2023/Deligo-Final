@@ -5,6 +5,9 @@ import { FaSignInAlt } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import {signIn,signOut } from "next-auth/react";
+import Popup from "../../components/User/PopUp";
+import PopUp1 from "../../components/PopUp1";
+
 
 const SignIn = () => {
   //google handler function
@@ -30,7 +33,9 @@ const SignIn = () => {
             height={80}
           ></Image>
         </Link>
+        
         <h2 className="text-center top-3 text-3xl  font-bold mb-4">Sign In</h2>
+        
         <form>
           <div className="mb-4">
             <label htmlFor="phone" className="block mb-2 font-medium">
@@ -115,6 +120,7 @@ const SignIn = () => {
           </div>
         </form>
       </div>
+      <PopUp1/>
     </div>
   );
 };

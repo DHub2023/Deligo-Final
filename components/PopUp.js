@@ -167,7 +167,7 @@ const Home = () => {
   return (
     <div>
       <button
-        className="mt-1 rounded-3xl bg-rose-600 px-4 py-2 font-bold text-white hover:bg-rose-800"
+        className="mt-1 rounded-3xl bg-blue-900 px-4 py-2 font-bold text-white hover:bg-rose-800"
         onClick={handleExploreClick}
       >
         Explore

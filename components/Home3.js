@@ -3,7 +3,7 @@ import React from "react";
 const Home3 = () => {
   return (
     <div>
-      <section className="bg-emerald-200 py-16 px-4 md:px-8 lg:px-16 xl:px-20">
+      <section className="bg-blue-50 py-16 px-4 md:px-8 lg:px-16 xl:px-20">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center">
           <div className="md:w-1/2">
             <img
@@ -13,16 +13,16 @@ const Home3 = () => {
             />
           </div>
           <div className="md:w-1/2 md:ml-8 mt-8 md:mt-0">
-            <h1 className="text-4xl font-bold text-teal-800 mb-4 font-serif">
+            <h1 className="text-4xl font-bold text-blue-950 mb-4 font-serif">
               Complete Multipurpose eBusiness Solution
             </h1>
-            <p className="text-teal-800 mb-8 text-2xl font-serif">
-              Deligo is a Laravel and Flutter Framework-based multi-vendor food,
+            <p className="text-blue-950 mb-8 text-2xl font-serif">
+              Dhub is a Laravel and Flutter Framework-based multi-vendor food,
               grocery, eCommerce, parcel, and pharmacy delivery system. It has
               six modules to cover all your business function
             </p>
             <div className="flex space-x-4">
-            <button className="bg-rose-800 inline-flex py-3 px-5 rounded-lg items-center hover:bg-rose-950 focus:outline-none">
+            <button className="bg-blue-900 inline-flex py-3 px-5 rounded-lg items-center hover:bg-blue-950 focus:outline-none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -35,7 +35,7 @@ const Home3 = () => {
                   <span className="title-font text-white font-medium">Google Play</span>
                 </span>
               </button>
-              <button className="bg-rose-800 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-rose-950 focus:outline-none">
+              <button className="bg-blue-900 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-blue-950 focus:outline-none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"

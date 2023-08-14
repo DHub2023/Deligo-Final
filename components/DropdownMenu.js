@@ -28,7 +28,7 @@ const DropdownMenu = () => {
           className="inline-flex m-2 font-medium hover:bg-white p-2 rounded-md"
           onClick={toggleDropdown}
         >
-          <VscAccount className="m-2 text-2xl font-semibold text-rose-300" /> Prashanta
+          <VscAccount className="m-2 text-2xl font-semibold text-rose-300 " /> Prashanta
         </button>
       </div>
 

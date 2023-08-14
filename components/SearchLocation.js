@@ -121,7 +121,7 @@ const SearchLocation = () => {
   return (
     <div>
       <div
-        className="flex  gap-3  bg-rose-900
+        className="flex  gap-3  bg-blue-950
         p-3 rounded-xl items-center "
       >
         <svg
@@ -144,7 +144,7 @@ const SearchLocation = () => {
           placeholder="Search Location Here"
           // onKeyDown={(e)=>e.key=='Enter'&&searchPlace(e.target.value)}
           className="rounded-md outline-none w-48 h-9 lg:w-60 sm:w-40 md:w-56 text-[16px]
-        placeholder-rose-400"
+        placeholder-blue-500"
         />
         <button onClick={findMyLocation}>
           <BiCurrentLocation

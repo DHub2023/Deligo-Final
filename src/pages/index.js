@@ -23,6 +23,9 @@ import Service from "../../components/Service";
 import Popup from "../../components/PopUp";
 import PopUp1 from "../../components/PopUp1";
 
+
+
+
 const Home = () => {
   return (
     <div>
