@@ -3,15 +3,15 @@ import Head from 'next/head';
 
 const cancellation = () => {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen font-poppins bg-gray-100">
     <Head>
-      <title>Refund Policy - 6amMart</title>
+      <title>Refund Policy - DHub</title>
     </Head>
     <main className="py-10">
       <div className="container mx-auto px-4">
         <h1 className="text-3xl font-bold text-center mb-6">Cancellation Policy</h1>
         <p className="text-gray-800 mb-4">
-          6amMart is a complete Multi-vendor Food, Grocery, eCommerce, Parcel,
+          Dhub is a complete Multi-vendor Food, Grocery, eCommerce, Parcel,
           Pharmacy, or any kind of products delivery system developed with a
           powerful admin panel to help you control your business smartly.
         </p>

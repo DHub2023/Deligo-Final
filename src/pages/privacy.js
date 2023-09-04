@@ -4,8 +4,8 @@ import Head from 'next/head';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="bg-gray-100 min-h-screen">
-      <Head className="text-center align-middle">
+    <div className="bg-gray-100 font-poppins min-h-screen">
+      <Head className="text-center  align-middle">
         <title className='text-center'>Privacy Policy - 6amMart</title>
         <meta
           name="description"

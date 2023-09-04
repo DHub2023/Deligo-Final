@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaSignInAlt } from "react-icons/fa";
+import { FaFacebookF, FaSignInAlt } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import {signIn,signOut } from "next-auth/react";
@@ -19,7 +19,7 @@ const SignIn = () => {
       <div className="flex items-center justify-center w-full md:w-1/2">
         <img
           src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
-          className="w-full text-rose-200"
+          className="w-full text-indigo-100"
           alt="Phone image"
         />
       </div>
@@ -27,7 +27,7 @@ const SignIn = () => {
         <Link href={"/"} className="cursor-pointer">
           <Image
             className="text-center  ml-40"
-            src={"/assets/images/dhub-logo.png"}
+            src={"/assets/images/dhub_logo.png"}
             alt=""
             width={150}
             height={80}
@@ -45,7 +45,7 @@ const SignIn = () => {
               <select
                 id="countryCode"
                 name="countryCode"
-                className="block appearance-none border border-rose-900 bg-rose-100 rounded px-3 py-2 mr-2"
+                className="block appearance-none border border-indigo-900 rounded px-3 py-2 mr-2"
               >
                 <option value="+1">+1 (USA)</option>
                 <option value="+44">+44 (UK)</option>
@@ -57,7 +57,7 @@ const SignIn = () => {
                 id="phone"
                 name="phone"
                 placeholder="Phone Number"
-                className="block appearance-none border border-rose-900 bg-rose-100 rounded w-full px-3 py-2"
+                className="block appearance-none border border-indigo-900 rounded w-full px-3 py-2"
               />
             </div>
           </div>
@@ -70,23 +70,23 @@ const SignIn = () => {
               id="password"
               name="password"
               placeholder="Password"
-              className="block appearance-none border border-rose-900 bg-rose-100 rounded w-full px-3 py-2"
+              className="block appearance-none border border-indigo-900  rounded w-full px-3 py-2"
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="remember" className="inline-flex items-center text-rose-500 text-base font-semibold">
+            <label htmlFor="remember" className="inline-flex items-center text-base font-semibold">
               <input
                 type="checkbox"
                 id="remember"
                 name="remember"
-                className="form-checkbox text-rose-500 mr-2"
+                className="form-checkbox  mr-2"
               />
               Remember Me
             </label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a
               href="/forgotpassword"
-              className="text-base font-semibold text-rose-500 mt-8"
+              className="text-base font-semibold mt-8"
             >
               Forgot Password?
             </a>
@@ -94,27 +94,44 @@ const SignIn = () => {
           <div className="flex justify-between -ml-3 text-center">
             <button
               type="submit"
-              className="flex text-center ml-44 p-4  bg-rose-400 hover:bg-rose-800 hover:text-white  font-semibold py-2 rounded-md"
+              className="flex text-center ml-44 p-4  bg-indigo-400 hover:bg-indigo-900 hover:text-white  font-semibold py-2 rounded-md"
             >
               SignIn &nbsp;
               <FaSignInAlt className=" top-3 text-center  text-xl" />
             </button>
           </div>
+          <div className="flex justify-between -ml-3 text-center">
+            <button
+              type="submit"
+              className="flex text-center ml-44 p-4  hover:text-indigo  font-semibold py-2 rounded-md"
+            >
+              Google &nbsp;
+              <FcGoogle className=" top-3 text-center  text-xl" />
+            </button>
+          </div>
+          <div className="flex justify-between -ml-3 text-center">
+            <button
+              type="submit"
+              className="flex text-center ml-44 p-4  hover:text-indigo  font-semibold py-2 rounded-md"
+            >
+              Facebook &nbsp;
+              <FaFacebook className=" top-3 text-center  text-xl" />
+            </button>
+          </div>
 
-          <div className="text-center mt-4">
+          {/* <div className="text-center mt-4">
             <span className="block mb-2">Or sign in with</span>
             <button type="button" onClick={handleGoogleSignin} className="w-full  text-white font-semibold py-2 rounded mt-2">
               Sign In with Google
               <FcGoogle className="text-center mx-44 text-3xl " />
             </button>
-            <button className="w-full  font-semibold py-2 rounded mt-2">
-              Sign In with Facebook
-              <FaFacebook className="text-center mx-44 text-3xl " />
+            <button className="w-60 flex bg-slate-500 text-center font-semibold py-1 rounded mt-2">
+              Facebook<FaFacebook className="text-center mx-30 align-baseline  text-3xl " />
             </button>
-          </div>
+          </div> */}
           <div className="text-center mt-4">
             <span className="text-sm">Don&apos;t have an account?</span>
-            <a href="/signup" className="text-rose-500 ml-1 font-bold">
+            <a href="/signup" className="text-indigo-900 ml-1 font-bold">
               Sign up
             </a>
           </div>

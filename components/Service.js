@@ -3,7 +3,7 @@ import ImageLink from "./ImageLink";
 
 const Service = () => {
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 font-poppins">
       <div className="container px-24 py-5 mx-auto">
         <div className="flex flex-wrap m-4">
           <div className="lg:w-1/8 md:w-1/8 p-2 w-32 h-28 mr-3 mb-2  hover:border-rose-400 border bg-white transform transition-all duration-300 ease-in-out hover:shadow-lg hover:bg-gray-100 hover:scale-105">

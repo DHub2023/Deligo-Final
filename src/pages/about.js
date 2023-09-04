@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 const cancellation = () => {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-100 font-poppins">
     <Head>
       <title>About Us - Deligo</title>
     </Head>
@@ -11,7 +11,7 @@ const cancellation = () => {
       <div className="container mx-auto px-4">
         <h1 className="text-3xl font-bold text-center mb-6">About Us</h1>
         <p className="text-gray-800 mb-4">
-          6amMart is a complete Multi-vendor Food, Grocery, eCommerce, Parcel,
+          DHub is a complete Multi-vendor Food, Grocery, eCommerce, Parcel,
           Pharmacy, or any kind of products delivery system developed with a
           powerful admin panel to help you control your business smartly.
         </p>

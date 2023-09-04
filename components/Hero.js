@@ -17,16 +17,16 @@ const Hero = () => {
       <section className="text-gray-600 body-font py-3 ">
         <div className="container bg-blue-50 rounded-2xl mx-auto flex px-5 py-6 md:flex-row flex-col items-center">
           <div className="lg:flex-grow  md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center rounded-full">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-900">
+            <h1 className="font-poppins sm:text-4xl text-3xl mb-4 font-medium text-blue-900">
               Your E-commerce!
             </h1>
-            <span className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-400">
+            <span className="font-poppins sm:text-4xl text-3xl mb-4 font-medium text-gray-400">
               Venture Starts Here
             </span>
-            <p className="mb-8 leading-relaxed ">
+            <p className="font-poppins mb-8 leading-relaxed ">
               More than just a reliable ecommerce platform
             </p>
-            <div className="flex  md:justify-start  justify-center items-end">
+            <div className="flex  md:justify-start font-poppins justify-center items-end">
               <SearchLocation />
             </div>
 
@@ -42,8 +42,8 @@ const Hero = () => {
                   <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z" />
                 </svg>
                 <span className="ml-4 flex items-start flex-col leading-none">
-                  <span className="text-xs text-white mb-1">GET IT ON</span>
-                  <span className="title-font text-white font-medium">
+                  <span className="text-xs font-poppins text-white mb-1">GET IT ON</span>
+                  <span className="font-poppins text-white font-medium">
                     Google Play
                   </span>
                 </span>
@@ -59,10 +59,10 @@ const Hero = () => {
                   <path d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z" />
                 </svg>
                 <span className="ml-4 flex items-start flex-col leading-none">
-                  <span className="text-xs text-white mb-1">
+                  <span className="font-poppins text-xs text-white mb-1">
                     Download on the
                   </span>
-                  <span className="title-font text-white font-medium">
+                  <span className="font-poppins text-white font-medium">
                     App Store
                   </span>
                 </span>

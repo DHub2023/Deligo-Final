@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 const TermsAndConditions = () => {
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-gray-100 min-h-screen font-poppins">
       <Head>
         <title>Terms And Conditions</title>
       </Head>

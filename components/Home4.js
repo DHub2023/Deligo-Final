@@ -2,10 +2,10 @@ import React from 'react'
 
 const Home4 = () => {
     return (
-        <div>
-            <div className="container mx-auto p-8">
-                <h1 className="text-2xl font-bold text-center mb-4 font-serif text-blue-950 dark:text-blue-200">Let’s  Start  Earning  with  Dhub</h1>
-                <p className="text-1xl text-center font-bold font-serif mb-4 text-gray-800 dark:text-blue-200 ">Join our online marketplace revolution and boost your income.</p>
+        <div className='font-poppins'>
+            <div className="container font-poppins mx-auto p-8">
+                <h1 className="text-2xl font-bold text-center mb-4 font-poppins text-blue-950 dark:text-blue-200">Let’s  Start  Earning  with  Dhub</h1>
+                <p className="text-1xl text-center font-bold font-poppins mb-4 text-gray-800 dark:text-blue-200 ">Join our online marketplace revolution and boost your income.</p>
                 <div className="flex flex-col md:flex-row">
                     <div className="w-full md:w-1/2 text-black flex flex-col items-center p-4 mb-4 md:mb-0">
                         <div className="flex flex-col md:flex-row items-center">

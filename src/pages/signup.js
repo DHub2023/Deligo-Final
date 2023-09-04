@@ -27,28 +27,28 @@ const Signup = () => {
                   <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
                     <div className="bg-white px-6 py-8 rounded shadow-md text-black w-full">
                       <img
-                        src="./images/dhub.png"
+                        src="/assets/images/dhub_logo.png"
                         alt="Logo"
                         classname="mx-auto mb-4 w-5 h-5"
                       />
-                      <h1 className="mb-8 text-3xl top-2 text-center font-bold text-rose-500">
+                      <h1 className="mb-8 text-3xl top-2 text-center font-bold text-indigo-900">
                         SIGN UP
                       </h1>
                       <input
                         type="text"
-                        className="block border border-rose-500 w-full p-3 hover:border-rose-500 rounded mb-4"
+                        className="block border border-indigo-900 w-full p-3 hover:border-indigo-900 rounded mb-4"
                         name="fullname"
                         placeholder="First Name*"
                       />
                       <input
                         type="text"
-                        className="block border border-rose-500 w-full p-3 rounded mb-4"
+                        className="block border border-indigo-900 w-full p-3 rounded mb-4"
                         name="fullname"
                         placeholder="Last Name*"
                       />
                       <input
                         type="text"
-                        className="block border border-rose-500 w-full p-3 rounded mb-4"
+                        className="block border border-indigo-900 w-full p-3 rounded mb-4"
                         name="email"
                         placeholder="Email*"
                       />
@@ -75,7 +75,7 @@ const Signup = () => {
                         <input
                           type={isPasswordVisible ? "text" : "password"}
                           placeholder="Password"
-                          className="block border border-rose-500 w-full p-3 rounded mb-4"
+                          className="block border border-indigo-900 w-full p-3 rounded mb-4"
                         />
                         <button
                           className="absolute inset-y-0 right-0 flex items-center px-4 text-gray-600"
@@ -123,7 +123,7 @@ const Signup = () => {
                         <input
                           type={isConfirmPasswordVisible ? "text" : "password"}
                           placeholder="Confirm Password"
-                          className="block border border-rose-500 w-full p-3 rounded mb-4"
+                          className="block border border-indigo-900 w-full p-3 rounded mb-4"
                         />
                         <button
                           className="absolute inset-y-0 right-0 flex items-center px-4 text-gray-600"
@@ -169,14 +169,14 @@ const Signup = () => {
                       </div>
                       <input
                         type="refercode"
-                        className="block border border-rose-500 w-full p-3 rounded mb-4"
+                        className="block border border-indigo-900 w-full p-3 rounded mb-4"
                         name="refer_code"
                         placeholder="refer code Optional"
                       />
                       <div className="flex space-x-10">
                         <button
                           type="submit"
-                          className="p-7 text-center  py-3 rounded bg-green text-white font-bold bg-rose-500 hover:bg-rose-700 focus:outline-none my-1 "
+                          className="p-7 text-center  py-3 rounded bg-green text-white font-bold bg-indigo-900 hover:bg-rose-700 focus:outline-none my-1 "
                         >
                           SignUp
                         </button>
@@ -187,7 +187,7 @@ const Signup = () => {
                           >
                             <button
                               type="submit"
-                              className="p-7 flex text-center py-3   rounded bg-green text-rose-500 font-bold  focus:outline-none my-1 "
+                              className="p-7 flex text-center py-3   rounded bg-green text-indigo-900 font-bold  focus:outline-none my-1 "
                             >
                               SignIn
                               <PiSignInFill className="my-1 mx-2 text-lg" />

@@ -10,7 +10,7 @@ const Footer = () => {
       </h1> */}
       {/* Footer container */}
       {/* Container for demo purpose */}
-      <div className="container my-5 mx-auto md:px-6">
+      <div className="container font-poppins my-5 mx-auto md:px-6">
         {/* Section: Design Block */}
         <section className="mb-8 mt-2 text-center lg:text-left">
           <div className="flex flex-wrap justify-center">
@@ -59,7 +59,7 @@ const Footer = () => {
         {/* Section: Design Block */}
       </div>
       {/* Container for demo purpose */}
-      <footer className="bg-blue-900 text-center text-white dark:bg-blue-900  dark:text-white lg:text-left">
+      <footer className="bg-blue-900 font-poppins text-center text-white dark:bg-blue-900  dark:text-white lg:text-left">
         <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
           <div className="mr-12 hidden lg:block">
             <span>Get connected with us on social networks:</span>

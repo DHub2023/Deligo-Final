@@ -3,7 +3,7 @@ import React from "react";
 const Home3 = () => {
   return (
     <div>
-      <section className="bg-blue-50 py-16 px-4 md:px-8 lg:px-16 xl:px-20">
+      <section className="bg-blue-50 font-poppins py-16 px-4 md:px-8 lg:px-16 xl:px-20">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center">
           <div className="md:w-1/2">
             <img
@@ -13,10 +13,10 @@ const Home3 = () => {
             />
           </div>
           <div className="md:w-1/2 md:ml-8 mt-8 md:mt-0">
-            <h1 className="text-4xl font-bold text-blue-950 mb-4 font-serif">
+            <h1 className="text-4xl font-bold text-blue-950 mb-4 font-poppins">
               Complete Multipurpose eBusiness Solution
             </h1>
-            <p className="text-blue-950 mb-8 text-2xl font-serif">
+            <p className="text-blue-950 mb-8 text-2xl font-poppins">
               Dhub is a Laravel and Flutter Framework-based multi-vendor food,
               grocery, eCommerce, parcel, and pharmacy delivery system. It has
               six modules to cover all your business function
@@ -32,7 +32,7 @@ const Home3 = () => {
                   <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z" />
                 </svg>
                 <span className="ml-4 flex items-start flex-col leading-none">
-                  <span className="title-font text-white font-medium">Google Play</span>
+                  <span className="title-font text-white font-medium font-poppins">Google Play</span>
                 </span>
               </button>
               <button className="bg-blue-900 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-blue-950 focus:outline-none">
@@ -46,7 +46,7 @@ const Home3 = () => {
                   <path d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z" />
                 </svg>
                 <span className="ml-4 flex items-start flex-col leading-none">
-                  <span className="title-font text-white font-medium">App Store</span>
+                  <span className="title-font text-white font-medium font-poppins">App Store</span>
                 </span>
               </button>
             

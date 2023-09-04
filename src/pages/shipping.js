@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 const shipping = () => {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen font-poppins bg-gray-100">
     <Head>
       <title>Refund Policy - deligo</title>
     </Head>
