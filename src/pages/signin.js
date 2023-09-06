@@ -137,7 +137,7 @@ const SignIn = () => {
           </div>
         </form>
       </div>
-      <PopUp1/>
+      {/* <PopUp1/> */}
     </div>
   );
 };

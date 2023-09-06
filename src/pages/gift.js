@@ -2,7 +2,7 @@ import React from "react";
 
 const Gift = () => {
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 font-poppins">
       <h1 className="text-3xl font-bold mb-4">Parcel Delivery Information</h1>
 
       <div className="grid grid-cols-3 gap-4">
@@ -26,7 +26,7 @@ const Gift = () => {
 
             <div className="flex justify-between shadow-lg">
             <label className="font-bold text-sm m-3" >Pick Up Address</label>
-            <button className=" flex justify-between text-rose-500 hover:bg-rose-400 hover:text-black rounded p-2">
+            <button className=" flex justify-between text-indigo-500 hover:bg-indigo-400 hover:text-black rounded p-2">
                 Set From Map
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ const Gift = () => {
 
             <div className="flex justify-between shadow-lg">
               <label className="font-bold text-sm m-3">Saved Address</label>
-              <button className=" text-rose-500 hover:bg-rose-400 hover:text-black rounded p-2">
+              <button className=" text-indigo-500 hover:bg-indigo-400 hover:text-black rounded p-2">
                 Add New Address
               </button>
             </div>
@@ -103,7 +103,7 @@ const Gift = () => {
             />
             <div className="flex justify-between shadow-lg">
             <label className="font-bold text-sm m-3" >Delivery Address</label>
-            <button className=" flex justify-between text-rose-500 hover:bg-rose-400 hover:text-black rounded p-2">
+            <button className=" flex justify-between text-indigo-500 hover:bg-indigo-400 hover:text-black rounded p-2">
                 Set From Map
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +135,7 @@ const Gift = () => {
             />
             <div className="flex justify-between shadow-lg">
               <label className="font-bold text-sm m-3">Saved Address</label>
-              <button className=" text-rose-500 hover:bg-rose-400 hover:text-black rounded p-2">
+              <button className=" text-indigo-500 hover:bg-indigo-400 hover:text-black rounded p-2">
                 Add New Address
               </button>
             </div>
@@ -170,7 +170,7 @@ const Gift = () => {
           />
           <h3 className="text-lg font-bold text-center">Gifts</h3>
           <p className="mb-4 text-center">Flower, Cards, Chocolate</p>
-          <button className="bg-red-500 text-white py-3 px-4 rounded w-full">
+          <button className="bg-indigo-200 text-black font-poppins font-bold py-3 px-4 rounded w-full">
             Proceed to Checkout
           </button>
         </div>
